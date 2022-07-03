@@ -9,9 +9,8 @@ namespace RomanNumerals.Test
         [TestMethod]
         public void Convert_14_Returns_XIV()
         {
-            var numeralConvertor = new RomanNumeralConvertor();
-
-            var result = numeralConvertor.Convert(14);
+            const int test = 14; 
+            var result = test.ToRomanNumeral();
 
             Assert.AreEqual(result, "XIV");
         }
@@ -19,29 +18,24 @@ namespace RomanNumerals.Test
         [TestMethod]
         public void Convert_1014_Returns_XIV()
         {
-            var numeralConvertor = new RomanNumeralConvertor();
-
-            var result = numeralConvertor.Convert(1014);
-
+            const int test = 1014;
+            var result = test.ToRomanNumeral();
             Assert.AreEqual(result, "MXIV");
         }
 
         [TestMethod]
         public void Convert_1_Returns_I()
         {
-            var numeralConvertor = new RomanNumeralConvertor();
-
-            var result = numeralConvertor.Convert(1);
-
+            const int test = 1;
+            var result = test.ToRomanNumeral();            
             Assert.AreEqual(result, "I");
         }
 
         [TestMethod]
         public void Convert_5_Returns_V()
         {
-            var numeralConvertor = new RomanNumeralConvertor();
-
-            var result = numeralConvertor.Convert(5);
+            const int test = 5;
+            var result = test.ToRomanNumeral();
 
             Assert.AreEqual(result, "V");
         }
@@ -50,9 +44,8 @@ namespace RomanNumerals.Test
         [TestMethod]
         public void Convert_10_Returns_X()
         {
-            var numeralConvertor = new RomanNumeralConvertor();
-
-            var result = numeralConvertor.Convert(10);
+            const int test = 10;
+            var result = test.ToRomanNumeral();
 
             Assert.AreEqual(result, "X");
         }
@@ -60,9 +53,8 @@ namespace RomanNumerals.Test
         [TestMethod]
         public void Convert_50_Returns_L()
         {
-            var numeralConvertor = new RomanNumeralConvertor();
-
-            var result = numeralConvertor.Convert(50);
+            const int test = 50;
+            var result = test.ToRomanNumeral();
 
             Assert.AreEqual(result, "L");
         }
@@ -70,29 +62,24 @@ namespace RomanNumerals.Test
         [TestMethod]
         public void Convert_100_Returns_C()
         {
-            var numeralConvertor = new RomanNumeralConvertor();
-
-            var result = numeralConvertor.Convert(100);
-
+            const int test = 100;
+            var result = test.ToRomanNumeral();            
             Assert.AreEqual(result, "C");
         }
 
         [TestMethod]
         public void Convert_500_Returns_D()
         {
-            var numeralConvertor = new RomanNumeralConvertor();
-
-            var result = numeralConvertor.Convert(500);
-
+            const int test = 500;
+            var result = test.ToRomanNumeral();
             Assert.AreEqual(result, "D");
         }
 
         [TestMethod]
         public void Convert_1000_Returns_M()
         {
-            var numeralConvertor = new RomanNumeralConvertor();
-
-            var result = numeralConvertor.Convert(1000);
+            const int test = 1000;
+            var result = test.ToRomanNumeral();
 
             Assert.AreEqual(result, "M");
         }
@@ -101,18 +88,16 @@ namespace RomanNumerals.Test
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void Negative_number_throws_exception()
         {
-            var numeralConvertor = new RomanNumeralConvertor();
-
-            numeralConvertor.Convert(-1);
+            const int test = -1;
+            var result = test.ToRomanNumeral();
         }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void Number_over_3999_number_Throws_exception()
         {
-            var numeralConvertor = new RomanNumeralConvertor();
-
-            numeralConvertor.Convert(4000);
+            const int test = 4000;
+            var result = test.ToRomanNumeral();
         }
     }
 }

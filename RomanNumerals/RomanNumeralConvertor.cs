@@ -7,16 +7,16 @@ namespace RomanNumerals
     /// <summary>
     /// 
     /// </summary>
-    public class RomanNumeralConvertor : INumeralConvertor
+    public static class RomanNumeralConvertor 
     {
         /// <summary>
         /// Convert number
         /// </summary>
         /// <param name="number">Number to convert</param>
         /// <returns>Roman Numeral String</returns>
-        public string Convert(int number)
+        public static string ToRomanNumeral(this int number)
         {
-            return RomanNumeralConvertor.ToRoman(number);
+            return ToRoman(number);
         }
 
         /// <summary>
