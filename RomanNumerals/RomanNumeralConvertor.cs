@@ -28,8 +28,8 @@ namespace RomanNumerals
         private static string ToRoman(int number)
         {
             if ((number < 0) || (number > 3999)) 
-            { 
-                throw new ArgumentOutOfRangeException("Value must be between 1 and 3999"); 
+            {
+                throw new ArgumentOutOfRangeException("Value must be between 1 and 3999");
             }
 
             if (number < 1)
