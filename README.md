@@ -1,8 +1,10 @@
 # Roman Numerals Kata
 Roman Numerals Code Kata 
 
+[![.NET](https://github.com/Cookiesworld/RomanNumeralsKata/actions/workflows/dotnet.yml/badge.svg)](https://github.com/Cookiesworld/RomanNumeralsKata/actions/workflows/dotnet.yml)
+
 # Requirements
-.net 5.0
+.net 8.0
 
 # Getting started
 git clone https://github.com/Cookiesworld/RomanNumeralsKata
